@@ -1,12 +1,12 @@
 //Write a JS function that calculates the date of the previous day by given year, month, and day.
 
-function previousDate(year, month, day){
-    
+function previousDate(year, month, day) {
+
     let date = new Date(`${year}-${month}-${day}`);
-    
+
     date.setDate(date.getDate() - 1);
- // console.log(date);
- 
+    // console.log(date);
+
     console.log(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate());
 }
 
