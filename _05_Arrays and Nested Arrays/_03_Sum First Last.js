@@ -1,0 +1,21 @@
+function sumFirstAndLast(arr) {
+    if (arr.length < 2) {
+        return NaN; // If the array has less than 2 elements, return NaN (Not-a-Number).
+    }
+
+    const firstNumber = parseFloat(arr[0]); // Parse the first element to a floating-point number.
+    const lastNumber = parseFloat(arr[arr.length - 1]); // Parse the last element to a floating-point number.
+
+    if (isNaN(firstNumber) || isNaN(lastNumber)) {
+        return NaN; // If parsing fails, return NaN.
+    }
+
+    return firstNumber + lastNumber;
+}
+
+// Example usage:
+const result1 = sumFirstAndLast(['20', '30', '40']);
+console.log(result1); // Output: 60
+
+const result2 = sumFirstAndLast(['5', '10']);
+console.log(result2); // Output: 15
