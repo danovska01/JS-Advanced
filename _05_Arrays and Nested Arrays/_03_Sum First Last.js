@@ -13,9 +13,20 @@ function sumFirstAndLast(arr) {
     return firstNumber + lastNumber;
 }
 
-// Example usage:
+
 const result1 = sumFirstAndLast(['20', '30', '40']);
 console.log(result1); // Output: 60
 
 const result2 = sumFirstAndLast(['5', '10']);
 console.log(result2); // Output: 15
+
+function sumEdges(arr){
+    //За да подсигурим случая ако масива е само с един елемент
+    //ползваме функциите shift и pop, които ще вземат елементи отзад и отпред, 
+    // но на копие масив.
+    const first = Number([...arr].shift());
+    const last = Number([...arr].pop());
+    return first + last;
+}
+console.log(sumEdges(['5', '10']));
+console.log(sumEdges(['20', '30', '40']));
