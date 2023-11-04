@@ -20,6 +20,9 @@ console.log(result1); // Output: 60
 const result2 = sumFirstAndLast(['5', '10']);
 console.log(result2); // Output: 15
 
+
+//============================== way 2 ===============================
+
 function sumEdges(arr){
     //За да подсигурим случая ако масива е само с един елемент
     //ползваме функциите shift и pop, които ще вземат елементи отзад и отпред, 
