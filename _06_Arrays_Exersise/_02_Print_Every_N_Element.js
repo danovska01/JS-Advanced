@@ -1,6 +1,6 @@
-function func(arr, n){
+function func(arr, step){
    const result = [];
-    for(let i = 0; i < arr.length; i += n){
+    for(let i = 0; i < arr.length; i += step){
         result.push(arr[i]); 
     }
     return result;
@@ -9,7 +9,7 @@ function func(arr, n){
 
 /// second way
 
-function func2(arr, n){
+function func2(arr, step){
     return arr.filter((element, index) => index % step == 0);
 
 }
