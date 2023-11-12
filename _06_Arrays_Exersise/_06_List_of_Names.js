@@ -12,4 +12,6 @@ function order(arr){
 
 }
 
-console.log(order(["John", "Bob", "Christina", "Ema"]));
+order(["John", "Bob", "Christina", "Ema"]);
+
+order(["Hohn", "Yasob", "Boristina", "Ama"]);
