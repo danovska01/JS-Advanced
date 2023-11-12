@@ -1,4 +1,4 @@
-function adAndRemove(arr){
+function addAndRemove(arr){
     let number = 1;
     let result = [];
     
@@ -16,3 +16,8 @@ function adAndRemove(arr){
         console.log(result.join('\n'));
     }
 }
+
+// addAndRemove(['add', 'add', 'add', 'add']);
+// addAndRemove(['add', 'add', 'remove', 'add', 'add']);
+// addAndRemove(['remove', 'remove', 'remove']);
+addAndRemove(['add', 'add', 'remove','add','add', 'remove', 'add']);
