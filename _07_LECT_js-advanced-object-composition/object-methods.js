@@ -34,3 +34,4 @@ let calc = {
 };
 
 console.log(calc.sum(10, 15));
+console.log(calc.division(10, 2));

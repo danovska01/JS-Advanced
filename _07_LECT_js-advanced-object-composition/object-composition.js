@@ -11,7 +11,7 @@ let car = {
     }
 };
 
-// car['honk']();
+car['honk']();
 
 // Print nested value
 console.log(car.owner.name);

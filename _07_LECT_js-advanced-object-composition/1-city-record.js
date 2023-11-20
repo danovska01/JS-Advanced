@@ -23,3 +23,12 @@ solve('Tortuga',
 7000,
 15000
 );
+
+console.log(solve('Tortuga',
+7000,
+15000
+));
+console.log(solve('Lisbon',
+7000,
+18000
+));
