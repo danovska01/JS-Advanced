@@ -26,6 +26,20 @@ function factory(library, orders) {
   return result;
 }
 
+//---------------------------second way
+
+// function factory(library, list) {
+//     return list.map(order => {
+//         const object = Object.assign({}, order.template);
+
+//         for (let part of order.parts) {
+//             object[part] = library[part];
+//         }
+//         return object;
+//     });
+// }
+
+//---------------------------------------
 const library = {
   print: function () {
     console.log(`${this.name} is printing a page`);
