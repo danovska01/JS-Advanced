@@ -13,7 +13,6 @@ function fromJSONToHTMLTable(input) {
       "   <tr>" +
       keys.map((key) => `<td>${escapeHtml(entry[key])}</td>`).join("") +
       "</tr>\n";
-      console.log(tableHTML);
   }
 
   tableHTML += "</table>";
