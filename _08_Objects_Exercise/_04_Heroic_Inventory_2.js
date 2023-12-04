@@ -12,6 +12,8 @@ function heroicInventory(inputArr) {
   return JSON.stringify(result);
 }
 
+//The output is a JSON representation of the data for all the heroes you’ve stored.
+
 console.log(heroicInventory([
     "Isacc / 25 / Apple, GravityGun",
     "Derek / 12 / BarrelVest, DestructionSword",
