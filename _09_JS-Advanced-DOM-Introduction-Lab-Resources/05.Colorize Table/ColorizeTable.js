@@ -1,6 +1,8 @@
 function colorize() {
     let oddRows = document.querySelectorAll('tr:nth-child(odd)');
-     // let rowElements = document.querySelectorAll('tr:nth-of-type(2n) td');
+     let rowElements = document.querySelectorAll('tr:nth-of-type(2n) td');
+     console.log(oddRows);
+     console.log(rowElements);
     oddRows.forEach(row => {
         row.style.backgroundColor = 'teal';
     });

@@ -8,5 +8,6 @@ function extract(content) {
         result.push(match[1])
     }
 
-    return result.join('; ');
+    contentElement.textContent=result.join('; ');
+
 }
