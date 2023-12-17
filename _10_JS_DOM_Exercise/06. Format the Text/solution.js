@@ -1,12 +1,12 @@
 function solve() {
-  let inputelement= document.getElementById("input");
-  let inputText = document.getElementById("input").value;
+  let inputElement= document.getElementById("input");
+  let inputText = inputElement.value;
   let sentences = inputText
     .split(".")
     .filter((sentence) => sentence.trim() !== "");
 
-  let outputDiv = document.getElementById("output");
-  outputDiv.innerHTML = ""; // Clear previous content
+  let outputElement = document.getElementById("output");
+  outputElement.innerHTML = ""; 
 
   for (let i = 0; i < sentences.length; i += 3) {
     let paragraphText = sentences.slice(i, i + 3).join(". ");
@@ -14,7 +14,7 @@ function solve() {
     paragraphText += ".";
 
     let paragraph = `<p>${paragraphText}</p>`;
-    outputDiv.innerHTML += paragraph;
-    inputelement.value= " ";
+    outputElement.innerHTML += paragraph;
+    inputElement.value= " ";
   }
 }
