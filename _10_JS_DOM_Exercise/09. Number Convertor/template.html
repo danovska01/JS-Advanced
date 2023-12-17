@@ -2,9 +2,8 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="template.css">
-    <title>NUMBER CONVERTOR</title>
-    <script src="./solution.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>NUMBER CONVERTER</title>
 </head>
 
 <body>
@@ -17,17 +16,18 @@
         </select>
         <label for="selectMenuTo">To</label>
         <select id="selectMenuTo">
-            <option selected value=""></option>
+            <!-- Add options for Binary and Hexadecimal -->
+            <option value="binary">Binary</option>
+            <option value="hexadecimal">Hexadecimal</option>
         </select>
-        <button>Convert it</button>
-
+        <!-- Add an ID to the button to enable the click event -->
+        <button id="convertButton">Convert it</button>
     </div>
     <footer>
         <label for="result">Result</label>
         <input type="text" name="output" id="result" disabled readonly />
     </footer>
-    <script>
-        solve();
-    </script>
+    <script src="./solution.js"></script>
 </body>
+
 </html>
