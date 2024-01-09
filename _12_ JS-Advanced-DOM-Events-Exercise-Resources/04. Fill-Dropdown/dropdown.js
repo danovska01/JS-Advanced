@@ -10,8 +10,10 @@ function addItem() {
     newOption.textContent = newItemText;
     newOption.value = newItemValue;
 
-    // Append the new option to the select with id "menu"
-    document.getElementById('menu').appendChild(newOption);
+    let menu =  document.getElementById('menu');
+    if(newItemText!=='' && newItemValue!==''){
+        menu.appendChild(newOption);
+    }
 
     // Clear the input fields
     document.getElementById('newItemText').value = '';
