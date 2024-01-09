@@ -17,7 +17,7 @@ function attachEventsListeners() {
         convert *= 1000;
         break;
       case "m":
-        convert - convert;
+        convert = convert;
         break;
       case "cm":
         convert *= 0.01;
