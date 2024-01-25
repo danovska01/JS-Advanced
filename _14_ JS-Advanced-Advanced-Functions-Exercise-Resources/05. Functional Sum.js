@@ -14,5 +14,5 @@ function add(num) {
 }
 
 console.log(add(1)(6)(-3).toString()); // 4
-console.log(add(2)(10)(20).toString()); // 32
+console.log(add(2)(10)(20)(20).toString()); // 32
 
