@@ -33,7 +33,7 @@ try {
     console.log(card2.toString()); // Output: 10♥
 
     // This will throw an error
-    const invalidCard = createCard('1', 'C');
+    // const invalidCard = createCard('1', 'C');
 } catch (error) {
     console.error(error.message); // Output: Invalid face or suit for the card
 }
